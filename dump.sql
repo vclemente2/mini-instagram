@@ -7,7 +7,7 @@ drop table if exists users;
 create table users (
 	id serial primary key not null,
   username varchar(30) not null unique,
-  password varchar(20) not null,
+  password text not null,
   name text,
   email text unique,
   phone text,

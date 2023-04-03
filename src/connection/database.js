@@ -1,6 +1,8 @@
 import { config } from 'dotenv';
 import knex from 'knex';
+import pg from 'pg';
 config();
+// pg.defaults.ssl = true;
 
 export const connection = knex({
     client: process.env.DB_CLIENT,
