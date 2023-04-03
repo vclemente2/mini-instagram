@@ -2,7 +2,7 @@ import { config } from 'dotenv';
 import express from 'express';
 import cors from 'cors';
 import UserRouter from './routes/UserRouter.js';
-
+import UserMiddleware from './middlewares/UserMiddlewar.js';
 config();
 
 export default class App {
